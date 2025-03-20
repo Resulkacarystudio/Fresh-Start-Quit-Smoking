@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidUnresolvableTag -->
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="top"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    app:layout_anchorGravity="center|top"
+    android:background="@drawable/o9"
+    app:layout_gravity="center|top"
+    tools:context=".sigaraBirak"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@drawable/rounded_button"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/arkaplanf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp">
+
+                    <!-- Sol Tarafa Yaslı TextView -->
+                    <TextView
+                        android:id="@+id/gun_txt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <!-- Sağ Tarafa Yaslı Button -->
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/baseline_menu_24"
+                        android:onClick="showpopup"
+                        android:contentDescription="Menü Aç"
+                        android:text=""/>
+                </LinearLayout>
+
+
+
+                <ProgressBar
+                    android:id="@+id/pgbar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    android:layout_marginTop="-40dp"
+                    android:background="@drawable/progress_circle_shape"
+                    android:indeterminate="false"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circular_progressbar" />
+
+                <TextView
+                    android:id="@+id/progress_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-200dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingRight="5dp"
+                    android:text="%50"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginRight="10dp"
+                    android:max="5"
+                    android:progress="0" />
+
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|fill"
+                    android:foregroundGravity="center|fill"
+                    app:columnCount="6"
+                    app:rowCount="1">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Sigarayı Bıraktım"
+
+                        android:textColor="@color/buttonTextColor"
+                        android:textSize="9sp"
+                        android:textStyle="bold|italic"
+                        app:layout_column="0"
+                        app:layout_row="0" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:text="1 GÜN"
+                        android:textColor="@color/buttonTextColor"
+                        android:textSize="9sp"
+                        android:textStyle="bold|italic"
+                        app:layout_column="1"
+                        app:layout_row="0" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="59dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:text="1 YIL"
+                        android:textColor="@color/buttonTextColor"
+                        android:textSize="9sp"
+                        android:textStyle="bold|italic"
+                        app:layout_column="4"
+                        app:layout_row="0" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:text="1 HAFTA"
+                        android:textColor="@color/buttonTextColor"
+                        android:textSize="9sp"
+                        android:textStyle="bold|italic"
+                        app:layout_column="2"
+                        app:layout_row="0" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="34dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:text="5 YIL"
+                        android:textColor="@color/buttonTextColor"
+                        android:textSize="9sp"
+                        android:textStyle="bold|italic"
+                        app:layout_column="5"
+                        app:layout_row="0" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="43dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:text="1 AY"
+                        android:textColor="@color/buttonTextColor"
+                        android:textSize="9sp"
+                        android:textStyle="bold|italic"
+                        app:layout_column="3"
+                        app:layout_row="0" />
+                </androidx.gridlayout.widget.GridLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#000000"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp"
+                    android:alpha="0.7"
+                    app:cardElevation="8dp"
+                    android:padding="16dp"
+                    android:background="@color/white"
+                    >
+                    <!-- İlk başlık: Sigarayı Bırakalı Geçen Zaman -->
+                    <TextView
+                        android:id="@+id/sigarayi_birakali_gecen_zaman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Sigarayı Bıraktıktan Sonra"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="30dp"
+                    app:columnCount="3"
+                    app:rowCount="4">
+
+
+
+                    <TextView
+                        android:id="@+id/gsaat"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/sigara_birak_time"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="SAAT\n0"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic"
+                        app:layout_column="0"
+                        app:layout_gravity="center"
+                        app:layout_row="0" />
+
+                    <TextView
+
+                        android:id="@+id/gdakika"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/sigara_birak_time"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="DAKİKA\n0"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic"
+                        app:layout_column="1"
+                        app:layout_gravity="center"
+                        app:layout_row="0"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/gsaniye"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/sigara_birak_time"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="SANİYE\n0"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic"
+                        app:layout_column="2"
+                        app:layout_gravity="center"
+                        app:layout_row="0" />
+
+                    <TextView
+                        android:id="@+id/geecenYil_txt"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:background="@drawable/sigara_birak_time"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="YIL\n0"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic"
+                        app:layout_column="0"
+                        app:layout_gravity="center"
+                        app:layout_row="1" />
+
+                    <TextView
+                        android:id="@+id/gecenAy_txt"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/sigara_birak_time"
+                        android:gravity="center|fill"
+                        android:padding="10dp"
+                        android:text="AY\n0"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic"
+                        app:layout_column="1"
+                        app:layout_gravity="center|fill"
+                        app:layout_row="1" />
+
+                    <TextView
+                        android:id="@+id/gecenGun_txt"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/sigara_birak_time"
+                        android:gravity="center|fill"
+                        android:padding="10dp"
+                        android:text="GÜN\n0"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic"
+                        app:layout_column="2"
+                        app:layout_gravity="center|fill"
+                        app:layout_row="1" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/icilmeyen_sigara_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sigara_birak_time"
+                        android:drawableTop="@drawable/icilmeyensigara2"
+                        android:foregroundGravity="center"
+                        android:gravity="center|fill"
+                        android:padding="10dp"
+                        android:text="İçilmeyen Sigara\n\t 0"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        app:layout_column="0"
+                        app:layout_gravity="center|fill"
+                        app:layout_row="2" />
+
+                    <TextView
+                        android:id="@+id/tasarruf_edilen_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sigara_birak_time"
+                        android:drawableTop="@drawable/tasarrufedilen"
+                        android:foregroundGravity="center"
+                        android:gravity="center|fill"
+                        android:padding="10dp"
+                        android:text="Tasarruf Edilen"
+                        android:textStyle="bold"
+
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        app:layout_column="1"
+                        app:layout_gravity="center|fill"
+                        app:layout_row="2"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/kazanilan_hayat_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/sigara_birak_time"
+                        android:drawableTop="@drawable/kazanilanhayat"
+                        android:foregroundGravity="center"
+                        android:gravity="center|fill"
+                        android:padding="10dp"
+                        android:text="Kazanılan Hayat"
+                        android:textStyle="bold"
+
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        app:layout_column="2"
+                        app:layout_gravity="center|fill"
+                        app:layout_row="2" />
+
+                    <TextView
+                        android:id="@+id/buzamanakadar_para"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/sigara_birak_time"
+                        android:drawableTop="@drawable/tasarrufedilmeyen"
+                        android:foregroundGravity="center"
+                        android:gravity="center|fill"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold"
+
+                        android:padding="10dp"
+                        android:text="Harcanan Para"
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        app:layout_column="1"
+                        app:layout_gravity="center|fill"
+                        app:layout_row="3" />
+
+                    <TextView
+                        android:id="@+id/buzamanakadar_zaman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/sigara_birak_time"
+                        android:drawableTop="@drawable/kaybedilenhayat1"
+                        android:foregroundGravity="center"
+                        android:gravity="center|fill"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+
+                        android:text="İçilen Zaman"
+                        android:layout_marginBottom="15dp"
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        app:layout_column="2"
+                        app:layout_gravity="center|fill"
+                        app:layout_row="3"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/buzamanakadar_sigara"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/sigara_birak_time"
+                        android:drawableTop="@drawable/icilensigara2"
+                        android:foregroundGravity="center"
+                        android:gravity="center|fill"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+
+                        android:text="İçilen Sigara"
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        app:layout_column="0"
+                        android:layout_marginBottom="15dp"
+                        app:layout_gravity="center|fill"
+                        app:layout_row="3" />
+                </androidx.gridlayout.widget.GridLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.gms.ads.AdView
+                        xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="ca-app-pub-1527387264089153/9195298278">
+                    </com.google.android.gms.ads.AdView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/sigara_birak_time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Ana renkler -->
+        <item name="colorPrimary">@color/bg_color</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+
+        <!-- Buton renkleri -->
+        <item name="colorButtonNormal">@color/primaryColor</item>
+
+
+        <!-- TextInput EditText için Renk -->
+        <item name="android:textColorHint">@color/primaryDarkColor</item>
+    </style>
+
+
+
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">#7E0F0F</item>
+    </style>
+    <style name="CustomTextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">none</item>
+        <item name="boxStrokeColor">#FF6200EE</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+    </style>
+
+
+
+</resources>

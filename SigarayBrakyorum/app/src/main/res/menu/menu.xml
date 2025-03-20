@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="İlerleme"
+        android:id="@+id/basari"
+        android:icon="@drawable/basari_asset"/>
+    <item
+        android:title="Durum"
+        android:id="@+id/durum"
+        android:icon="@drawable/durum_asset"/>
+    <item
+        android:title="Sağlık"
+        android:id="@+id/saglik"
+        android:icon="@drawable/saglik_asset"/>
+
+
+
+</menu>

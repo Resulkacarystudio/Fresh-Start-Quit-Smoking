@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:columnCount="2"
+        android:rowCount="5">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="8dp"
+            android:layout_margin="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Arka Plan Resmi -->
+                <ImageView
+                    android:id="@+id/backgroundImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/o7"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Background"
+                    />
+
+                <!-- Başlık -->
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="İlerleme\nDurumu"
+
+                    android:textSize="35sp"
+                    android:textColor="@color/buttonTextColor"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="60dp" />
+
+                <!-- Alt Metin -->
+                <TextView
+                    android:id="@+id/birakmatarihi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sep 5, 2015"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintTop_toBottomOf="@id/titleText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Sağdaki Bilgiler -->
+                <LinearLayout
+                    android:id="@+id/rightInfoLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="16dp">
+
+                    <!-- İçilmemiş Sigara -->
+                    <TextView
+                        android:id="@+id/icinmeyen_sigara_kazanim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="İçilmeyen Sigara: 20"
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="60dp" />
+
+                    <!-- Tasarruf Edilen Para -->
+                    <TextView
+                        android:id="@+id/tasarruf_edilen_kazanim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tasarruf Edilen:50₺"
+                        android:textStyle="bold"
+
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="8dp" />
+
+                    <!-- Kazanılan Hayat Süresi -->
+                    <TextView
+                        android:id="@+id/kazanilan_hayat_kazanim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kazanılan Hayat:2 saat"
+                        android:textStyle="bold"
+
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/black"
+            android:layout_marginTop="0dp">
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="0dp"
+           >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_row="0"
+            android:layout_column="0">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#009688"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="30dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="𝐒𝐢𝐠𝐚𝐫𝐚𝐲ı 𝐁ı𝐫𝐚𝐤𝐭ı𝐦"
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="\n•Sigarayı bırakma\nkararınızı net bir şekilde alın.\n•Ailenizden, arkadaşlarınızdan veya\ndestek gruplarından yardım isteyin.\n"
+                            android:textSize="12sp"
+                            android:textColor="#90FFFFFF"
+                            android:layout_marginBottom="10dp" />
+                    </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_alignParentRight="true"
+                                android:layout_width="170dp"
+                                android:layout_height="170dp"
+                                android:src="@drawable/kazanimclass_hedef">
+                            </ImageView>
+                        </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:orientation="horizontal"
+
+
+
+            tools:ignore="MissingConstraints">
+
+            <!-- Sol Taraftaki CardView -->
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/gradient_background"
+                android:id="@+id/birsaatC"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/birsaatL"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:id="@+id/birsaatT"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1 Saat"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"/>
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Sağ Taraftaki CardView -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:background="#009688"
+                android:id="@+id/ucsaatC"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    android:id="@+id/ucsaatL"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3 Saat"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"/>
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:orientation="horizontal"
+
+
+            tools:ignore="MissingConstraints">
+
+            <!-- Sol Taraftaki CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:id="@+id/altisaatC"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    android:id="@+id/altisaatL"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="6 Saat"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"
+
+                        android:id="@+id/altisaatT"
+
+                        />
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Sağ Taraftaki CardView -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:id="@+id/onikisaatC"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    android:id="@+id/onikisaatL"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="12 Saat"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"
+                        android:id="@+id/onikisaatT"
+                        />
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:orientation="horizontal"
+
+
+            tools:ignore="MissingConstraints">
+
+            <!-- Sol Taraftaki CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:id="@+id/birgunC"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    android:id="@+id/birgunL"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1 Gün"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"
+                        android:id="@+id/birgunT"
+                        />
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Sağ Taraftaki CardView -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:id="@+id/ikigunC"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    android:id="@+id/ikigunL"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2 Gün"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"
+                        android:id="@+id/ikigunT"
+                        />
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:orientation="horizontal"
+
+
+            tools:ignore="MissingConstraints">
+
+            <!-- Sol Taraftaki CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:id="@+id/ucgunC"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    android:id="@+id/ucgunL"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3 Gün"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"/>
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Sağ Taraftaki CardView -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:id="@+id/birhaftaC"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    android:id="@+id/birhaftaL"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1 Hafta"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"/>
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:orientation="horizontal"
+
+
+            tools:ignore="MissingConstraints">
+
+            <!-- Sol Taraftaki CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:id="@+id/ikihaftaC"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    android:id="@+id/ikihaftaL"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2 Hafta"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"/>
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Sağ Taraftaki CardView -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:id="@+id/birayC"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    android:id="@+id/birayL"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1 Ay"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"/>
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:orientation="horizontal"
+
+
+            tools:ignore="MissingConstraints">
+
+            <!-- Sol Taraftaki CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:id="@+id/ucayC"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    android:id="@+id/ucayL"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3 Ay"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"/>
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Sağ Taraftaki CardView -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:id="@+id/altiayC"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    android:id="@+id/altiayL"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="6 Ay"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"/>
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:orientation="horizontal"
+
+
+            tools:ignore="MissingConstraints">
+
+            <!-- Sol Taraftaki CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:id="@+id/biryilC"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    android:id="@+id/biryilL"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1 Yıl"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"/>
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Sağ Taraftaki CardView -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="50dp"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1"
+                android:id="@+id/besyilC"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient_background"
+                    android:id="@+id/besyilL"
+                    >
+
+                    <!-- Sol Taraftaki İçerik -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5 Yıl"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"/>
+
+                    <!-- Sağ Taraftaki Resim -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/kazanimclass_hedef"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

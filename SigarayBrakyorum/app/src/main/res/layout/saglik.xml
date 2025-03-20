@@ -1,0 +1,1300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:columnCount="2"
+        android:rowCount="5"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="8dp"
+            android:layout_margin="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Arka Plan Resmi -->
+                <ImageView
+                    android:id="@+id/backgroundImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/o7"
+                android:scaleType="centerCrop"
+                android:contentDescription="Background"
+                />
+
+                <!-- Başlık -->
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sağlık\nDurumu"
+
+                    android:textSize="35sp"
+                    android:textColor="@color/buttonTextColor"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="60dp" />
+
+                <!-- Alt Metin -->
+                <TextView
+                    android:id="@+id/birakmatarihi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sep 5, 2015"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintTop_toBottomOf="@id/titleText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Sağdaki Bilgiler -->
+                <LinearLayout
+                    android:id="@+id/rightInfoLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="16dp">
+
+                    <!-- İçilmemiş Sigara -->
+                    <TextView
+                        android:id="@+id/icinmeyen_sigara_saglik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="İçilmeyen Sigara: 20"
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="60dp" />
+
+                    <!-- Tasarruf Edilen Para -->
+                    <TextView
+                        android:id="@+id/tasarruf_edilen_saglik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tasarruf Edilen:50₺"
+                        android:textStyle="bold"
+
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="8dp" />
+
+                    <!-- Kazanılan Hayat Süresi -->
+                    <TextView
+                        android:id="@+id/kazanilan_hayat_saglik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kazanılan Hayat:2 saat"
+                        android:textStyle="bold"
+
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/black"
+            android:layout_marginTop="0dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/black"
+            android:visibility="gone"
+            android:layout_marginTop="0dp">
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_row="0"
+            android:layout_column="0">
+
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#DD49111E"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="30dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Karar Verildi."
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:text="Sigarayı Bırakmak İçin İlk Adımı Attınız."
+                            android:textSize="12sp"
+                            android:textColor="#90FFFFFF"
+                            android:layout_marginBottom="10dp"
+
+                            />
+                        <!-- • -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textSize="15sp"
+                            android:textColor="#90FFFFFF"
+                            android:layout_marginBottom="10dp" />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/zafer1"
+                            >
+                        </ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55100E0E"
+                android:orientation="vertical"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="30dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20 Dakika"
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+
+                            />
+<!-- • -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="•Kan basıncınız normale döner.\n•Nabız normale döner."
+                            android:textSize="15sp"
+                            android:textColor="#90FFFFFF"
+                            android:layout_marginBottom="10dp"
+
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        >
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:src="@drawable/saglik_kalpcik"
+                            >
+
+
+
+                        </ImageView>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/l3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55100E0E"
+                android:orientation="vertical"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="30dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8 Saat"
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+
+                            />
+                        <!-- • -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="•Nikotin ve C0 Düzeyleri yarı\nyarıya azalır.\n•Oksijen düzeyi normale döner."
+                            android:textSize="15sp"
+                            android:textColor="#90FFFFFF"
+                            android:layout_marginBottom="10dp"
+
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        >
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:src="@drawable/saglik_oksijen"
+                            >
+
+
+
+                        </ImageView>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/l4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55100E0E"
+                android:orientation="vertical"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="30dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="24 Saat"
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+
+                            />
+                        <!-- • -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="•CO vücuttan atılır.\n•Akciğerler mukusu temizlemeye\nbaşlar."
+                            android:textSize="15sp"
+                            android:textColor="#90FFFFFF"
+                            android:layout_marginBottom="10dp"
+
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        >
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:src="@drawable/saglik_akciger"
+                            >
+
+
+
+                        </ImageView>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/l5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55100E0E"
+                android:orientation="vertical"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="30dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="48 Saat"
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+
+                            />
+                        <!-- • -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="•Vücutta nikotin tamamen atılır.\n•Tat ve koku alma büyük ölçüde\neski haline döner."
+                            android:textSize="15sp"
+                            android:textColor="#90FFFFFF"
+                            android:layout_marginBottom="10dp"
+
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        >
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:src="@drawable/saglik_tat"
+                            >
+
+
+
+                        </ImageView>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/l6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55100E0E"
+                android:orientation="vertical"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="30dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="72 Saat"
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+
+                            />
+                        <!-- • -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="•Nefes alma kolaylaşır.\n•Bronşlar gevşemeye başlar."
+                            android:textSize="15sp"
+                            android:textColor="#90FFFFFF"
+                            android:layout_marginBottom="10dp"
+
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        >
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:src="@drawable/saglik_nefes"
+                            >
+
+
+
+                        </ImageView>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/l7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55100E0E"
+                android:orientation="vertical"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="30dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2-12 Hafta"
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+
+                            />
+                        <!-- • -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="•Dolaşım normale döner."
+                            android:textSize="15sp"
+                            android:textColor="#90FFFFFF"
+                            android:layout_marginBottom="10dp"
+
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        >
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:src="@drawable/saglik_dolasim"
+                            >
+
+
+
+                        </ImageView>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/l8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55100E0E"
+                android:orientation="vertical"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="30dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3-9 Ay"
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+
+                            />
+                        <!-- • -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="•Öksürük,hırıltı ve nefes alma\n problemleri düzelir.\n•Akciger fonksiyonları %10 artar."
+                            android:textSize="15sp"
+                            android:textColor="#90FFFFFF"
+                            android:layout_marginBottom="10dp"
+
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        >
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:src="@drawable/saglik_oksuruk"
+                            >
+
+
+
+                        </ImageView>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/l9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55100E0E"
+                android:orientation="vertical"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="30dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 Yıl"
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+
+                            />
+                        <!-- • -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="•Kalp krizi riski yarı yarıya azalmıştır."
+                            android:textSize="15sp"
+                            android:textColor="#90FFFFFF"
+                            android:layout_marginBottom="10dp"
+
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        >
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:src="@drawable/saglik_kalp"
+                            >
+
+
+
+                        </ImageView>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/l10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55100E0E"
+                android:orientation="vertical"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="30dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 Yıl"
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+
+                            />
+                        <!-- • -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="•Akciğer kanseri riski yarı yarıya\nazalmıştır.."
+                            android:textSize="15sp"
+                            android:textColor="#90FFFFFF"
+                            android:layout_marginBottom="10dp"
+
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        >
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:src="@drawable/saglik_ak"
+                            >
+
+
+
+                        </ImageView>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/l11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55100E0E"
+                android:orientation="vertical"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="30dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15 Yıl"
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+
+                            />
+                        <!-- • -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="•Kalp krizi riski hiç içmeyenlerle\neşittir."
+                            android:textSize="15sp"
+                            android:textColor="#90FFFFFF"
+                            android:layout_marginBottom="10dp"
+
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        >
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="60dp"
+                            android:src="@drawable/saglik_kalpcik"
+                            >
+
+
+
+                        </ImageView>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primaryColor">#B1ADAC</color> <!-- Ana renk (Örneğin: Turuncu) -->
+    <color name="primaryDarkColor">#E64A19</color> <!-- Koyu versiyon -->
+    <color name="accentColor">#FFC107</color> <!-- Vurgulayıcı renk (Sarı) -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- Buton yazı rengi (Beyaz) -->
+
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="progressColor">#FF4081</color>
+    <color name="progressBorderColor">#4CAF50</color>
+
+
+    <color name="bg_color">#040507</color>
+    <color name="bg_card_color">#423F5B</color>
+</resources>

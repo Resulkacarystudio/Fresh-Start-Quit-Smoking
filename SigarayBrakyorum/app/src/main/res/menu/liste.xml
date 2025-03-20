@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/bir_saat"
+        android:title="1 SAAT"/>
+    <item android:id="@+id/bir_gun"
+        android:title="1 GÜN"/>
+
+    <item android:id="@+id/iki_gun"
+        android:title="2 GÜN"/>
+
+    <item android:id="@+id/bir_hafta"
+        android:title="1 HAFTA"/>
+
+    <item android:id="@+id/bir_ay"
+        android:title="1 AY"/>
+
+    <item android:id="@+id/alti_ay"
+        android:title="6 AY"/>
+
+    <item android:id="@+id/bir_yil"
+        android:title="1 YIL"/>
+
+    <item android:id="@+id/bes_yil"
+        android:title="5 YIL"/>
+
+    <item android:id="@+id/yenidenbasla"
+        android:title="Uygulamayı Sıfırla"/>
+
+
+
+
+</menu>
