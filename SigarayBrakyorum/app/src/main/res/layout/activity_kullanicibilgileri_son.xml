@@ -6,7 +6,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/kullanicibilgilerison_background"
+
+    android:background="@drawable/bg101"
+
     tools:context=".kullanicibilgileri_son">
 
     <!-- Kart İçinde Giriş Alanları -->

@@ -11,7 +11,10 @@
     android:gravity="center|top"
     android:orientation="vertical"
     app:layout_anchorGravity="center|top"
-    android:background="@drawable/o9"
+
+
+    android:background="@drawable/bg101"
+
     app:layout_gravity="center|top"
     tools:context=".sigaraBirak"
     tools:layout_editor_absoluteY="25dp">
