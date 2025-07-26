@@ -370,47 +370,47 @@ public class sigaraBirak extends AppCompatActivity implements PopupMenu.OnMenuIt
             progress_txt.setTextSize(TypedValue.COMPLEX_UNIT_PX, 35);
             if (currentSecond[0] > 3600 * 24 * 30 * 12 * 10) {
                 progress_txt.setText(String.format("%.1f%%\n\n10 YIL TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
                 totalSeconds = 3600 * 24 * 30 * 12 * 20;
                 durum = "20 YIL";
             } else if (currentSecond[0] > 3600 * 24 * 30 * 12 * 5) {
                 progress_txt.setText(String.format("%.1f%%\n\n5 YIL TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
                 totalSeconds = 3600 * 24 * 30 * 12 * 10;
                 durum = "10 YIL";
             } else if (currentSecond[0] > 3600 * 24 * 30 * 12) {
                 progress_txt.setText(String.format("%.1f%%\n\n1 YIL TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
                 totalSeconds = 3600 * 24 * 30 * 12 * 5;
                 durum = "5 YIL";
             } else if (currentSecond[0] > 3600 * 24 * 30 * 6) {
                 progress_txt.setText(String.format("%.1f%%\n\n6 AY TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
                 totalSeconds = 86400 * 30 * 12;
                 durum = "1 YIL";
             } else if (currentSecond[0] > 3600 * 24 * 30) {
                 progress_txt.setText(String.format("%.1f%%\n\n1 AY TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
                 totalSeconds = 86400 * 30 * 6;
                 durum = "6 AY";
             } else if (currentSecond[0] > 3600 * 24 * 7) {
                 progress_txt.setText(String.format("%.1f%%\n\n1 HAFTA TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
                 totalSeconds = 3600 * 24 * 30;
                 durum = "1 AY";
             } else if (currentSecond[0] > 3600 * 24 * 2) {
                 progress_txt.setText(String.format("%.1f%%\n\n2 GÜN TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
                 totalSeconds = 86400 * 7;
                 durum = "1 HAFTA";
             } else if (currentSecond[0] > 3600 * 24) {
                 progress_txt.setText(String.format("%.1f%%\n\n2 GÜN TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
                 totalSeconds = 86400 * 2;
                 durum = "2 GÜN";
             } else if (currentSecond[0] > 3600) {
                 progress_txt.setText(String.format("%.1f%%\n\n1 SAAT TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
                 totalSeconds = 3600 * 24;
                 durum = "1 GÜN";
             } else if (currentSecond[0] < 3600) {
@@ -522,7 +522,7 @@ public class sigaraBirak extends AppCompatActivity implements PopupMenu.OnMenuIt
                         .start();
                 progress_txt.setTextSize(TypedValue.COMPLEX_UNIT_PX, 35);
                 progress_txt.setText(String.format("%.1f%%\n\n1 GÜN TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
             } else {
                 toplamzaman = gecenSaniye + (gecenDakika) * 60 + (gecenSaat) * 3600 + (gecenGun) * 86400 + (gecenAy) * 2629743 + (gecenYil * 31556926);
                 progressStatus = 0.0;
@@ -548,7 +548,7 @@ public class sigaraBirak extends AppCompatActivity implements PopupMenu.OnMenuIt
                         .start();
                 progress_txt.setTextSize(TypedValue.COMPLEX_UNIT_PX, 35);
                 progress_txt.setText(String.format("%.1f%%\n\n1 SAAT TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
             } else {
                 durum = "1 SAAT";
                 toplamzaman = gecenSaniye + (gecenDakika) * 60 + (gecenSaat) * 3600 + (gecenGun) * 86400 + (gecenAy) * 2629743 + (gecenYil * 31556926);
@@ -572,7 +572,7 @@ public class sigaraBirak extends AppCompatActivity implements PopupMenu.OnMenuIt
                         .start();
                 progress_txt.setTextSize(TypedValue.COMPLEX_UNIT_PX, 35);
                 progress_txt.setText(String.format("%.1f%%\n\n2 GÜN TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
             } else {
                 durum = "2 GÜN";
                 toplamzaman = gecenSaniye + (gecenDakika) * 60 + (gecenSaat) * 3600 + (gecenGun) * 86400 + (gecenAy) * 2629743 + (gecenYil * 31556926);
@@ -596,7 +596,7 @@ public class sigaraBirak extends AppCompatActivity implements PopupMenu.OnMenuIt
                         .start();
                 progress_txt.setTextSize(TypedValue.COMPLEX_UNIT_PX, 35);
                 progress_txt.setText(String.format("%.1f%%\n\n1 HAFTA TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
             } else {
                 toplamzaman = gecenSaniye + (gecenDakika) * 60 + (gecenSaat) * 3600 + (gecenGun) * 86400 + (gecenAy) * 2629743 + (gecenYil * 31556926);
                 progressStatus = 0.0;
@@ -620,7 +620,7 @@ public class sigaraBirak extends AppCompatActivity implements PopupMenu.OnMenuIt
                         .start();
                 progress_txt.setTextSize(TypedValue.COMPLEX_UNIT_PX, 35);
                 progress_txt.setText(String.format("%.1f%%\n\n1 AY TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
             } else {
                 toplamzaman = gecenSaniye + (gecenDakika) * 60 + (gecenSaat) * 3600 + (gecenGun) * 86400 + (gecenAy) * 2629743 + (gecenYil * 31556926);
                 progressStatus = 0.0;
@@ -644,7 +644,7 @@ public class sigaraBirak extends AppCompatActivity implements PopupMenu.OnMenuIt
                         .start();
                 progress_txt.setTextSize(TypedValue.COMPLEX_UNIT_PX, 35);
                 progress_txt.setText(String.format("%.1f%%\n\n6 AY TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
             } else {
                 toplamzaman = gecenSaniye + (gecenDakika) * 60 + (gecenSaat) * 3600 + (gecenGun) * 86400 + (gecenAy) * 2629743 + (gecenYil * 31556926);
                 progressStatus = 0.0;
@@ -667,7 +667,7 @@ public class sigaraBirak extends AppCompatActivity implements PopupMenu.OnMenuIt
                         .start();
                 progress_txt.setTextSize(TypedValue.COMPLEX_UNIT_PX, 35);
                 progress_txt.setText(String.format("%.1f%%\n\n1 YIL TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
             } else {
                 toplamzaman = gecenSaniye + (gecenDakika) * 60 + (gecenSaat) * 3600 + (gecenGun) * 86400 + (gecenAy) * 2629743 + (gecenYil * 31556926);
                 progressStatus = 0.0;
@@ -690,7 +690,7 @@ public class sigaraBirak extends AppCompatActivity implements PopupMenu.OnMenuIt
                         .start();
                 progress_txt.setTextSize(TypedValue.COMPLEX_UNIT_PX, 35);
                 progress_txt.setText(String.format("%.1f%%\n\n5 YIL TAMAMLANDI", 100.0));
-                progress_txt.setTextColor(getColor(R.color.black));
+                progress_txt.setTextColor(getColor(R.color.white));
             } else {
                 progressStatus = 0.0;
                 toplamzaman = gecenSaniye + (gecenDakika) * 60 + (gecenSaat) * 3600 + (gecenGun) * 86400 + (gecenAy) * 2629743 + (gecenYil * 31556926);
